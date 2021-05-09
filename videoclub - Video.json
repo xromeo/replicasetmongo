@@ -1,0 +1,1121 @@
+use videoclub
+
+db.getCollection("video").insertMany(
+  [{
+      "id": 1,
+      "title": "Avatar",
+      "duration": 178,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie",
+        "Oscar-Best Director"
+      ],
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2009,
+      "directorName": "James Cameron",
+      "cast": [
+        "Joel David Moore",
+        "CCH Pounder",
+        "Wes Studi"
+      ],
+      "dvdUnitCost": 42,
+      "quantityReceived": 10,
+      "quantityAvailable": 3,
+      "recordTime": new Date()
+    },
+    {
+      "id": 2,
+      "title": "Pirates of the Caribbean: At World's End",
+      "duration": 169,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2007,
+      "directorName": "Gore Verbinski",
+      "cast": [
+        "Orlando Bloom",
+        "Johnny Depp",
+        "Jack Davenport"
+      ],
+      "dvdUnitCost": 24,
+      "quantityReceived": 10,
+      "quantityAvailable": 4,
+      "recordTime": new Date()
+    },
+    {
+      "id": 3,
+      "title": "Spectre",
+      "duration": 148,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "nomination": "",
+      "awards": "",
+      "yearPublication": 2015,
+      "directorName": "Sam Mendes",
+      "cast": [
+        "Rory Kinnear",
+        "Christoph Waltz",
+        "Stephanie Sigman"
+      ],
+      "dvdUnitCost": 35,
+      "quantityReceived": 15,
+      "quantityAvailable": 6,
+      "recordTime": new Date()
+    },
+    {
+      "id": 4,
+      "title": "The Dark Knight Rises",
+      "duration": 164,
+      "gender": [
+        "Action",
+        "Thriller"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2012,
+      "directorName": "Christopher Nolan",
+      "cast": [
+        "Christian Bale",
+        "Tom Hardy",
+        "Joseph Gordon-Levitt"
+      ],
+      "dvdUnitCost": 13,
+      "quantityReceived": 5,
+      "quantityAvailable": 4,
+      "recordTime": new Date()
+    },
+    {
+      "id": 5,
+      "title": "John Carter",
+      "duration": 132,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": "",
+      "yearPublication": 2012,
+      "directorName": "Andrew Stanton",
+      "cast": [
+        "Samantha Morton",
+        "Daryl Sabara",
+        "Polly Walker"
+      ],
+      "dvdUnitCost": 26,
+      "quantityReceived": 10,
+      "quantityAvailable": 6,
+      "recordTime": new Date()
+    },
+    {
+      "id": 6,
+      "title": "Spider-Man 3",
+      "duration": 156,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Romance"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "British Academy - Best Script"
+      ],
+      "awards": "",
+      "yearPublication": 2007,
+      "directorName": "Sam Raimi",
+      "cast": [
+        "James Franco",
+        "J.K. Simmons",
+        "Kirsten Dunst"
+      ],
+      "dvdUnitCost": 28,
+      "quantityReceived": 10,
+      "quantityAvailable": 1,
+      "recordTime": new Date()
+    },
+    {
+      "id": 7,
+      "title": "Tangled",
+      "duration": 100,
+      "gender": [
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Fantasy",
+        "Musical",
+        "Romance"
+      ],
+      "nomination": "",
+      "awards": "",
+      "yearPublication": 2010,
+      "directorName": "Nathan Greno",
+      "cast": [
+        "Donna Murphy",
+        "Brad Garrett",
+        "M.C. Gainey"
+      ],
+      "dvdUnitCost": 19,
+      "quantityReceived": 10,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 8,
+      "title": "Avengers: Age of Ultron",
+      "duration": 141,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2015,
+      "directorName": "Joss Whedon",
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Hemsworth",
+        "Scarlett Johansson"
+      ],
+      "dvdUnitCost": 21,
+      "quantityReceived": 10,
+      "quantityAvailable": 9,
+      "recordTime": new Date()
+    },
+    {
+      "id": 9,
+      "title": "Harry Potter and the Half-Blood Prince",
+      "duration": 153,
+      "gender": [
+        "Adventure",
+        "Family",
+        "Fantasy",
+        "Mystery"
+      ],
+      "nomination": [
+        "Emmy Awards-Best Actor",
+        "Family",
+        "Oscar-Best Movie",
+        "Mystery"
+      ],
+      "awards": "",
+      "yearPublication": 2009,
+      "directorName": "David Yates",
+      "cast": [
+        "Daniel Radcliffe",
+        "Alan Rickman",
+        "Rupert Grint"
+      ],
+      "dvdUnitCost": 25,
+      "quantityReceived": 10,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 10,
+      "title": "Batman v Superman: Dawn of Justice",
+      "duration": 183,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": "",
+      "yearPublication": 2016,
+      "directorName": "Zack Snyder",
+      "cast": [
+        "Lauren Cohan",
+        "Henry Cavill",
+        "Alan D. Purwin"
+      ],
+      "dvdUnitCost": 40,
+      "quantityReceived": 5,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 11,
+      "title": "Superman Returns",
+      "duration": 169,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": "",
+      "yearPublication": 2006,
+      "directorName": "Bryan Singer",
+      "cast": [
+        "Marlon Brando",
+        "Kevin Spacey",
+        "Frank Langella"
+      ],
+      "dvdUnitCost": 46,
+      "quantityReceived": 10,
+      "quantityAvailable": 7,
+      "recordTime": new Date()
+    },
+    {
+      "id": 12,
+      "title": "Quantum of Solace",
+      "duration": 106,
+      "gender": [
+        "Action",
+        "Adventure"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor"
+      ],
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Family",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2008,
+      "directorName": "Marc Forster",
+      "cast": [
+        "Mathieu Amalric",
+        "Giancarlo Giannini",
+        "Rory Kinnear"
+      ],
+      "dvdUnitCost": 12,
+      "quantityReceived": 10,
+      "quantityAvailable": 3,
+      "recordTime": new Date()
+    },
+    {
+      "id": 13,
+      "title": "Pirates of the Caribbean: Dead Man's Chest",
+      "duration": 151,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2006,
+      "directorName": "Gore Verbinski",
+      "cast": [
+        "Orlando Bloom",
+        "Johnny Depp",
+        "Jack Davenport"
+      ],
+      "dvdUnitCost": 15,
+      "quantityReceived": 10,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 14,
+      "title": "The Lone Ranger",
+      "duration": 150,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Western"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Western"
+      ],
+      "awards": "",
+      "yearPublication": 2013,
+      "directorName": "Gore Verbinski",
+      "cast": [
+        "Ruth Wilson",
+        "Johnny Depp",
+        "Tom Wilkinson"
+      ],
+      "dvdUnitCost": 18,
+      "quantityReceived": 5,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 15,
+      "title": "Man of Steel",
+      "duration": 143,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie",
+        "Oscar-Best Director"
+      ],
+      "awards": "",
+      "yearPublication": 2013,
+      "directorName": "Zack Snyder",
+      "cast": [
+        "Christopher Meloni",
+        "Henry Cavill",
+        "Harry Lennix"
+      ],
+      "dvdUnitCost": 44,
+      "quantityReceived": 10,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 16,
+      "title": "The Chronicles of Narnia: Prince Caspian",
+      "duration": 150,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Family",
+        "Oscar-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2008,
+      "directorName": "Andrew Adamson",
+      "cast": [
+        "Pierfrancesco Favino",
+        "Peter Dinklage",
+        "Damián Alcázar"
+      ],
+      "dvdUnitCost": 48,
+      "quantityReceived": 10,
+      "quantityAvailable": 10,
+      "recordTime": new Date()
+    },
+    {
+      "id": 17,
+      "title": "The Avengers",
+      "duration": 173,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": "",
+      "yearPublication": 2012,
+      "directorName": "Joss Whedon",
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Hemsworth",
+        "Scarlett Johansson"
+      ],
+      "dvdUnitCost": 33,
+      "quantityReceived": 5,
+      "quantityAvailable": 4,
+      "recordTime": new Date()
+    },
+    {
+      "id": 18,
+      "title": "Pirates of the Caribbean: On Stranger Tides",
+      "duration": 136,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2011,
+      "directorName": "Rob Marshall",
+      "cast": [
+        "Sam Claflin",
+        "Johnny Depp",
+        "Stephen Graham"
+      ],
+      "dvdUnitCost": 41,
+      "quantityReceived": 10,
+      "quantityAvailable": 3,
+      "recordTime": new Date()
+    },
+    {
+      "id": 19,
+      "title": "Men in Black 3",
+      "duration": 106,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Family",
+        "Fantasy",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Comedy",
+        "Family",
+        "Oscar-Best Movie",
+        "Oscar-Best Director"
+      ],
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2012,
+      "directorName": "Barry Sonnenfeld",
+      "cast": [
+        "Michael Stuhlbarg",
+        "Will Smith",
+        "Nicole Scherzinger"
+      ],
+      "dvdUnitCost": 23,
+      "quantityReceived": 10,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 20,
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "duration": 164,
+      "gender": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "nomination": [
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2014,
+      "directorName": "Peter Jackson",
+      "cast": [
+        "Adam Brown",
+        "Aidan Turner",
+        "James Nesbitt"
+      ],
+      "dvdUnitCost": 10,
+      "quantityReceived": 10,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 21,
+      "title": "The Amazing Spider-Man",
+      "duration": 153,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2012,
+      "directorName": "Marc Webb",
+      "cast": [
+        "Andrew Garfield",
+        "Emma Stone",
+        "Chris Zylka"
+      ],
+      "dvdUnitCost": 26,
+      "quantityReceived": 10,
+      "quantityAvailable": 8,
+      "imdb_score": 7
+    },
+    {
+      "id": 22,
+      "title": "Robin Hood",
+      "duration": 156,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "History"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Golden Globe-Best Actor",
+        "History"
+      ],
+      "awards": "",
+      "yearPublication": 2010,
+      "directorName": "Ridley Scott",
+      "cast": [
+        "William Hurt",
+        "Mark Addy",
+        "Scott Grimes"
+      ],
+      "dvdUnitCost": 30,
+      "quantityReceived": 10,
+      "quantityAvailable": 1,
+      "recordTime": new Date()
+    },
+    {
+      "id": 23,
+      "title": "The Hobbit: The Desolation of Smaug",
+      "duration": 186,
+      "gender": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "nomination": [
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Family",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2013,
+      "directorName": "Peter Jackson",
+      "cast": [
+        "Adam Brown",
+        "Aidan Turner",
+        "James Nesbitt"
+      ],
+      "dvdUnitCost": 35,
+      "quantityReceived": 10,
+      "quantityAvailable": 3,
+      "recordTime": new Date()
+    },
+    {
+      "id": 24,
+      "title": "The Golden Compass",
+      "duration": 113,
+      "gender": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "nomination": "",
+      "awards": "",
+      "yearPublication": 2007,
+      "directorName": "Chris Weitz",
+      "cast": [
+        "Eva Green",
+        "Christopher Lee",
+        "Kristin Scott Thomas"
+      ],
+      "dvdUnitCost": 31,
+      "quantityReceived": 20,
+      "quantityAvailable": 12,
+      "recordTime": new Date()
+    },
+    {
+      "id": 25,
+      "title": "King Kong",
+      "duration": 201,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Romance"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Golden Globe-Best Actor",
+        "British Academy - Best Script"
+      ],
+      "awards": "",
+      "yearPublication": 2005,
+      "directorName": "Peter Jackson",
+      "cast": [
+        "Thomas Kretschmann",
+        "Naomi Watts",
+        "Evan Parke"
+      ],
+      "dvdUnitCost": 20,
+      "quantityReceived": 10,
+      "quantityAvailable": 10,
+      "recordTime": new Date()
+    },
+    {
+      "id": 26,
+      "title": "Titanic",
+      "duration": 194,
+      "gender": [
+        "Drama",
+        "Romance"
+      ],
+      "nomination": [
+        "Golden Globe-Best Actor",
+        "British Academy - Best Script"
+      ],
+      "awards": "",
+      "yearPublication": 1997,
+      "directorName": "James Cameron",
+      "cast": [
+        "Kate Winslet",
+        "Leonardo DiCaprio",
+        "Gloria Stuart"
+      ],
+      "dvdUnitCost": 39,
+      "quantityReceived": 10,
+      "quantityAvailable": 0,
+      "recordTime": new Date()
+    },
+    {
+      "id": 27,
+      "title": "Captain America: Civil War",
+      "duration": 147,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2016,
+      "directorName": "Anthony Russo",
+      "cast": [
+        "Scarlett Johansson",
+        "Robert Downey Jr.",
+        "Chris Evans"
+      ],
+      "dvdUnitCost": 25,
+      "quantityReceived": 10,
+      "quantityAvailable": 1,
+      "recordTime": new Date()
+    },
+    {
+      "id": 28,
+      "title": "Battleship",
+      "duration": 131,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "nomination": "",
+      "awards": "",
+      "yearPublication": 2012,
+      "directorName": "Peter Berg",
+      "cast": [
+        "Alexander Skarsgård",
+        "Liam Neeson",
+        "Tadanobu Asano"
+      ],
+      "dvdUnitCost": 40,
+      "quantityReceived": 10,
+      "quantityAvailable": 8,
+      "recordTime": new Date()
+    },
+    {
+      "id": 29,
+      "title": "Jurassic World",
+      "duration": 124,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director",
+        "Emmy Awards-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2015,
+      "directorName": "Colin Trevorrow",
+      "cast": [
+        "Judy Greer",
+        "Bryce Dallas Howard",
+        "Omar Sy"
+      ],
+      "dvdUnitCost": 50,
+      "quantityReceived": 10,
+      "quantityAvailable": 2,
+      "imdb_score": 7
+    },
+    {
+      "id": 30,
+      "title": "Skyfall",
+      "duration": 143,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "nomination": "",
+      "awards": "",
+      "yearPublication": 2012,
+      "directorName": "Sam Mendes",
+      "cast": [
+        "Helen McCrory",
+        "Albert Finney",
+        "Rory Kinnear"
+      ],
+      "dvdUnitCost": 50,
+      "quantityReceived": 10,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 31,
+      "title": "Spider-Man 2",
+      "duration": 135,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Romance"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie",
+        "British Academy - Best Script"
+      ],
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2004,
+      "directorName": "Sam Raimi",
+      "cast": [
+        "James Franco",
+        "J.K. Simmons",
+        "Kirsten Dunst"
+      ],
+      "dvdUnitCost": 24,
+      "quantityReceived": 10,
+      "quantityAvailable": 5,
+      "recordTime": new Date()
+    },
+    {
+      "id": 32,
+      "title": "Iron Man 3",
+      "duration": 195,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": "",
+      "yearPublication": 2013,
+      "directorName": "Shane Black",
+      "cast": [
+        "Jon Favreau",
+        "Robert Downey Jr.",
+        "Don Cheadle"
+      ],
+      "dvdUnitCost": 10,
+      "quantityReceived": 5,
+      "quantityAvailable": 2,
+      "recordTime": new Date()
+    },
+    {
+      "id": 33,
+      "title": "Alice in Wonderland",
+      "duration": 108,
+      "gender": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "nomination": "",
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Family",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2010,
+      "directorName": "Tim Burton",
+      "cast": [
+        "Alan Rickman",
+        "Johnny Depp",
+        "Anne Hathaway"
+      ],
+      "dvdUnitCost": 41,
+      "quantityReceived": 10,
+      "quantityAvailable": 3,
+      "recordTime": new Date()
+    },
+    {
+      "id": 34,
+      "title": "X-Men: The Last Stand",
+      "duration": 104,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie",
+        "Oscar-Best Director",
+        "Emmy Awards-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2006,
+      "directorName": "Brett Ratner",
+      "cast": [
+        "Kelsey Grammer",
+        "Hugh Jackman",
+        "Daniel Cudmore"
+      ],
+      "dvdUnitCost": 35,
+      "quantityReceived": 10,
+      "quantityAvailable": 0,
+      "recordTime": new Date()
+    },
+    {
+      "id": 35,
+      "title": "Monsters University",
+      "duration": 104,
+      "gender": [
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ],
+      "nomination": [
+        "Emmy Awards-Best Actor",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Oscar-Best Movie"
+      ],
+      "awards": "",
+      "yearPublication": 2013,
+      "directorName": "Dan Scanlon",
+      "cast": [
+        "Tyler Labine",
+        "Steve Buscemi",
+        "Sean Hayes"
+      ],
+      "dvdUnitCost": 28,
+      "quantityReceived": 10,
+      "quantityAvailable": 1,
+      "recordTime": new Date()
+    },
+    {
+      "id": 36,
+      "title": "Transformers: Revenge of the Fallen",
+      "duration": 150,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": "",
+      "yearPublication": 2009,
+      "directorName": "Michael Bay",
+      "cast": [
+        "Kevin Dunn",
+        "Glenn Morshower",
+        "Ramon Rodriguez"
+      ],
+      "dvdUnitCost": 34,
+      "quantityReceived": 5,
+      "quantityAvailable": 0,
+      "imdb_score": 6
+    },
+    {
+      "id": 37,
+      "title": "Transformers: Age of Extinction",
+      "duration": 165,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Director"
+      ],
+      "awards": "",
+      "yearPublication": 2014,
+      "directorName": "Michael Bay",
+      "cast": [
+        "Sophia Myles",
+        "Bingbing Li",
+        "Kelsey Grammer"
+      ],
+      "dvdUnitCost": 43,
+      "quantityReceived": 10,
+      "quantityAvailable": 8,
+      "recordTime": new Date()
+    },
+    {
+      "id": 38,
+      "title": "Oz the Great and Powerful",
+      "duration": 130,
+      "gender": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "nomination": "",
+      "awards": "",
+      "yearPublication": 2013,
+      "directorName": "Sam Raimi",
+      "cast": [
+        "Mila Kunis",
+        "Tim Holmes",
+        "James Franco"
+      ],
+      "dvdUnitCost": 10,
+      "quantityReceived": 20,
+      "quantityAvailable": 6,
+      "recordTime": new Date()
+    },
+    {
+      "id": 39,
+      "title": "The Amazing Spider-Man 2",
+      "duration": 142,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi"
+      ],
+      "nomination": [
+        "Goya Awards-Best Soundtrack",
+        "Emmy Awards-Best Actor",
+        "Oscar-Best Movie",
+        "Oscar-Best Director"
+      ],
+      "awards": [
+        "Emmy Awards-Best Actor",
+        "Family",
+        "Oscar-Best Movie"
+      ],
+      "yearPublication": 2014,
+      "directorName": "Marc Webb",
+      "cast": [
+        "Andrew Garfield",
+        "Emma Stone",
+        "B.J. Novak"
+      ],
+      "dvdUnitCost": 24,
+      "quantityReceived": 10,
+      "quantityAvailable": 10,
+      "recordTime": new Date()
+    },
+    {
+      "id": 40,
+      "title": "TRON: Legacy",
+      "duration": 125,
+      "gender": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "nomination": "",
+      "awards": "",
+      "yearPublication": 2010,
+      "directorName": "Joseph Kosinski",
+      "cast": [
+        "Olivia Wilde",
+        "Jeff Bridges",
+        "James Frain"
+      ],
+      "dvdUnitCost": 34,
+      "quantityReceived": 10,
+      "quantityAvailable": 7,
+      "recordTime": new Date()
+    }
+  ]
+)
+
+
+db.getCollection("video").createIndex({
+    "id": 1
+  }, {
+    "name": "videoId",
+    "background": true
+  }
+
+)
